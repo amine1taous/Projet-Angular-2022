@@ -1,0 +1,78 @@
+/* div {
+  display: flex;
+  justify-content: space-between;
+}
+h3 {
+  font-family: "Rubik", sans-serif;
+  font-weight: bolder;
+  font-style: italic;
+  margin-top: 50px;
+  margin-left: 145px;
+  margin-bottom: -35px;
+}
+h4 {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+}
+p {
+  font-family: "ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+img {
+  height: 150px;
+} */
+.apropos {
+  width: 500px;
+  margin: 30px;
+  padding-left: 70px;
+}
+.apropos h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.qui_nous_sommes {
+  width: 800px;
+  height: 250px;
+  padding: 30px;
+  margin-left: 100px;
+}
+.qui_nous_sommes img {
+  padding-left: 500px;
+  height: 120px;
+  padding-top: 0px;
+}
+p {
+  padding-left: 50px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.nos_evenement {
+  width: 800px;
+  height: 250px;
+  padding: 30px;
+  margin-left: 350px;
+}
+.nos_evenement h2 {
+  text-align: center;
+  padding-bottom: 40px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.nos_evenement p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.equipe_dev {
+  width: 800px;
+  height: 250px;
+  padding: 30px;
+  margin-left: 350px;
+}
+.equipe_dev h2 {
+  text-align: center;
+  padding-bottom: 40px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.equipe_dev p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}

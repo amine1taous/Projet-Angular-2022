@@ -1,0 +1,56 @@
+img {
+  height: 100px;
+}
+ul li {
+  list-style-type: none;
+}
+button {
+  margin: 15px;
+}
+button:hover {
+  box-shadow: 1px 2px 2px rgb(231, 231, 231);
+  cursor: pointer;
+}
+.overplay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 0.4s;
+  visibility: hidden;
+  opacity: 0;
+}
+.overplay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: 0rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 5px;
+  width: 45%;
+  height: 900px;
+  position: relative;
+  transition: all 0.4 ease-in-out;
+}
+.popup h3 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.popup .cross {
+  position: absolute;
+  top: 1rem;
+  right: 5.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3 ease;
+  color: #333;
+}
+.popup .cross:hover {
+  color: yellow;
+}

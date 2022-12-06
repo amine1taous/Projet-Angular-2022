@@ -1,0 +1,26 @@
+.titre_droite {
+  font-size: large;
+  padding: 10px;
+}
+.form_droite {
+  padding-left: 45px;
+}
+.textarea_droite {
+  margin-left: 45px;
+}
+input {
+  background-color: rgb(218, 218, 218);
+  color: #000;
+  opacity: 0.5;
+}
+input::placeholder {
+  color: black;
+}
+textarea {
+  color: #000;
+  background-color: rgb(218, 218, 218);
+  opacity: 0.5;
+}
+textarea::placeholder {
+  color: black;
+}

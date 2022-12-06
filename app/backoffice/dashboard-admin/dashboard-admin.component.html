@@ -1,0 +1,25 @@
+<div style="background-color: rgb(32, 32, 32)">
+  <div class="header_acceuil">
+    <span style="display: inline-flex; padding: 5px">
+      <p style="padding-top: 5px">Ben yaghlane</p>
+    </span>
+    <span style="padding-top: 15px">
+      <ul class="nav" style="display: flex; justify-content: space-around">
+        <li>
+          <button class="btn btn-outline-warning" routerLink="acceuil">
+            Acceuil
+          </button>
+        </li>
+        <li>
+          <button class="btn btn-outline-warning" routerLink="listProduits">
+            Liste des produits
+          </button>
+        </li>
+        <button class="btn btn-outline-warning" routerLink="logout">
+          Deconnecter<i class="fa-solid fa-right-from-bracket"></i>
+        </button>
+      </ul>
+      <router-outlet></router-outlet>
+    </span>
+  </div>
+</div>

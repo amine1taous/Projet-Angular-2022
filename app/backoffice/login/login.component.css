@@ -1,0 +1,22 @@
+.box {
+  height: 250px;
+  width: 300px;
+  background-color: rgba(223, 221, 221, 0.849);
+  border: 2px solid whitesmoke;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+.box input {
+  padding-left: 10px;
+  width: 250px;
+  border-radius: 20px;
+  margin: 10px;
+  background: transparent;
+  background-color: rgb(221, 221, 221);
+}
+.box input:hover {
+  box-shadow: 5px 5px 5px rgb(221, 221, 221);
+}
+.box input i:hover {
+  box-shadow: 5px 5px 5px rgb(5, 134, 194);
+}

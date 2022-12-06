@@ -1,0 +1,77 @@
+<div class="granddiv">
+  <div class="section-title">
+    <h2>Nos Promotions</h2>
+  </div>
+  <div class="row" style="margin-bottom: 3px">
+    <ul class="gdiv">
+      <ng-container
+        *ngFor="let prod of lesProduitsPromo | async"
+        class="col-sm-4"
+      >
+        <li *ngIf="prod.promotion == true" style="padding: 20px">
+          <div class="card box image" style="width: 18rem">
+            <img
+              [src]="prod.image"
+              class="card-img-top p-2"
+              height="250px"
+              width="900px"
+            />
+            <h4 class="card-title">
+              {{ prod.libelle }}
+            </h4>
+            <p class="card-text">
+              Prix:
+              <span>
+                <s>{{ prod.prix }}Dinars</s>
+              </span>
+              =>
+              <span class="btn btn-danger"
+                >{{ prod.prix | prix | number : "0.3" }} Dt
+              </span>
+            </p>
+            <span
+              class="badge text-bg-warning m-4"
+              *ngIf="prod.disponibilite == true"
+            >
+              disponible
+            </span>
+            <span
+              class="badge text-bg-warning m-4"
+              *ngIf="prod.disponibilite == false"
+            >
+              Repture de stock
+            </span>
+            <span class="badge text-bg-secondary m-4"> Commander </span>
+            <button
+              type="button"
+              class="btn btn-primary container"
+              [routerLink]="['/produit', prod.id]"
+            >
+              Details
+            </button>
+          </div>
+        </li>
+      </ng-container>
+    </ul>
+  </div>
+</div>
+<div class="boutton_dessous">
+  <button
+    class="btn btn-outline-primary"
+    style="padding: 15px; margin: 10px; float: center"
+    routerLink="actif"
+    routerLinkActive="/listproduit"
+  >
+    <i class="fa-solid fa-backward"></i>
+    Page Precedente
+  </button>
+  <button
+    class="btn btn-outline-primary"
+    style="padding: 15px; margin: 10px; float: center"
+    routerLink="actif"
+    routerLinkActive="/Apropos"
+  >
+    Page suivante
+    <i class="fa-solid fa-forward"></i>
+  </button>
+</div>

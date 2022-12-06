@@ -1,0 +1,42 @@
+<div style="padding-left: 40%; padding-top: 20px; padding-bottom: 20px">
+  <div class="box">
+    <h2 style="font-family: Nerko One; font-weight: bold; text-align: center">
+      Login Form
+    </h2>
+    <form style="padding-left: 10px" [formGroup]="loginform">
+      <input
+        type="text"
+        placeholder="Entrer le login"
+        formControlName="username"
+      /><br />
+      <input
+        type="password"
+        placeholder="Saisir votre mot de passe"
+        formControlName="password"
+      /><br />
+      <button
+        class="btn btn-outline-info"
+        (click)="onSubmit()"
+        style="margin-left: 95px"
+      >
+        Sign In
+      </button>
+      {{ message }}
+    </form>
+    <span
+      style="
+        font-size: xx-large;
+        color: rgb(5, 134, 194);
+        display: flex;
+        justify-content: space-around;
+        width: 150;
+        padding-top: 20px;
+        cursor: pointer;
+      "
+    >
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-yahoo"></i>
+      <i class="fa-brands fa-twitter"></i>
+    </span>
+  </div>
+</div>

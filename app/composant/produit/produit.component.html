@@ -1,0 +1,76 @@
+<div class="container-fluid" style="text-align: center">
+  <div class="row">
+    <!-- Loop over the collection of products -->
+    <div class="col-md-3">
+      <div class="product-box">
+        <a>
+          <img [src]="produit.image" class="img-fluid" />
+        </a>
+        <a>
+          <h2>{{ produit.description }}</h2>
+        </a>
+        <h5>
+          quantite :
+          <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </h5>
+
+        <div class="price" *ngIf="produit.promotion == false">
+          prix :{{ produit.prix }}DT
+        </div>
+        <div class="price" *ngIf="produit.promotion == true">
+          prix :{{ produit.prix }}DT
+        </div>
+        <!-- <form [FormGroup]="CommentaireForm">
+          <div formArrayName="commentaire">
+            <div *ngFor="let d of lescommentaire.controls; index as i">
+              <strong> Commentaire n° {{ i }}</strong>
+              <div [formGroupName]="i">
+                <label>name :</label>
+                <input type="text" formControlName="name" /> <br /><br />
+
+                <label>description :</label>
+                <input type="text" formControlName="description" /> <br />
+              </div>
+            </div>
+          </div>
+          <button (click)="ajouterDiplome()" class="button-74" role="button">
+            Ajouter un commentaire</button
+          ><br /><br />
+          <button (click)="ajouterAcc()" class="button-74" role="button">
+            Envoyer et enregistrer votre commentaire
+          </button>
+          <br />
+        </form> -->
+
+        <button
+          class="mt-2 btn btn-outline-warning"
+          style="margin-left: 30px; margin-top: 30px"
+          (click)="add()"
+        >
+          <i class="fa fa-shopping-cart"></i>Add to cart
+        </button>
+        <button
+          class="btn btn-outline-info"
+          style="margin-left: 30px; margin-top: 30px"
+          routerLink="listproduit"
+          routerLinkActive="actif"
+        >
+          <i class="fa-solid fa-backward"></i>
+          Vers La page Precedente
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<br /><br />

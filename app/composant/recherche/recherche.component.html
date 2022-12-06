@@ -1,0 +1,12 @@
+<div class="input-group mb-3">
+  <input
+    type="text"
+    name="search"
+    placeholder="search here..."
+    [(ngModel)]="entersearchvalue"
+    (input)="onSearchTextChanged()"
+    class="fas fa-search"
+  />
+
+  <button class="btn btn-warning" type="submit">rechercher</button>
+</div>

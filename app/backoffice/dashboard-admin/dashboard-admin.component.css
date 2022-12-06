@@ -1,0 +1,19 @@
+ul li {
+  list-style-type: none;
+  display: inline;
+  padding: 5px;
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+}
+img {
+  height: 75px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 6px;
+  align-items: center;
+}

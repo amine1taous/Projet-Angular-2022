@@ -1,0 +1,208 @@
+<div id="silder">
+  <img [src]="mySource" />
+  <div id="btn_left">
+    <img (click)="silder(-1)" class="left" src="assets/left.png" />
+  </div>
+  <div id="btn_rigth">
+    <img (click)="silder(1)" class="right" src="assets/right.png" />
+  </div>
+</div>
+<br /><br /><br />
+<div class="section-title">
+  <h2>Les Categories</h2>
+</div>
+<br /><br /><br /><br />
+<section id="featured-services" class="featured-services">
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-lg-4 col-md-6"
+        routerLinkActive="actif"
+        routerLink="/fromage"
+      >
+        <div class="icon-box">
+          <img
+            style="height: 200px"
+            id="border"
+            src="assets/fromage-chevre-argentine.jpg"
+          />
+          <h4 class="title">
+            <a routerLinkActive="actif" routerLink="/fromage">FROMAGE</a>
+          </h4>
+        </div>
+      </div>
+      <div
+        class="col-lg-4 col-md-6 mt-4 mt-md-0"
+        routerLinkActive="actif"
+        routerLink="/cafe"
+      >
+        <div class="icon-box">
+          <img id="border" style="height: 200px" src="assets/2.jfif" />
+          <h4 class="title">
+            <a routerLinkActive="actif" routerLink="/cafe">CAFE</a>
+          </h4>
+        </div>
+      </div>
+      <div
+        class="col-lg-4 col-md-6 mt-4 mt-lg-0"
+        routerLinkActive="actif"
+        routerLink="/patisserie"
+      >
+        <div class="icon-box">
+          <img id="border" style="height: 200px" src="assets/3.jpg" />
+          <h4 class="title">
+            <a routerLinkActive="actif" routerLink="patisserie">PATISSERIE</a>
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br /><br />
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-lg-4 col-md-6"
+        routerLinkActive="actif"
+        routerLink="/fruit sec"
+      >
+        <div class="icon-box">
+          <img id="border" style="height: 200px" src="assets/4.jpg" />
+          <h4 class="title">
+            <a routerLinkActive="actif" routerLink="/fruit sec">FRUIT SEC</a>
+          </h4>
+        </div>
+      </div>
+      <div
+        class="col-lg-4 col-md-6 mt-4 mt-md-0"
+        routerLinkActive="actif"
+        routerLink="/conserve"
+      >
+        <div class="icon-box">
+          <img id="border" style="height: 200px" src="assets/5.png" />
+          <h4 class="title">
+            <a routerLinkActive="actif" routerLink="/conserve">CONSERVE</a>
+          </h4>
+        </div>
+      </div>
+      <div
+        class="col-lg-4 col-md-6 mt-4 mt-lg-0"
+        routerLinkActive="actif"
+        routerLink="/charcuterie"
+      >
+        <div class="icon-box">
+          <img id="border" style="height: 200px" src="assets/6.jpg" />
+          <h4 class="title">
+            <a routerLinkActive="actif" routerLink="/charcuterie"
+              >CHARCUTERIE</a
+            >
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br /><br />
+<div class="section-title">
+  <h2>Les services</h2>
+</div>
+<div style="display: flex; padding-left: 110px; text-align: center">
+  <div style="padding: 40px">
+    <div class="row" style="margin-bottom: 3px">
+      <div class="gdiv">
+        <div class="col-sm-4">
+          <div class="card box image" style="width: 18rem">
+            <img
+              style="width: 280px; height: 300px"
+              src="assets/produit.png"
+              class="card-img-top p-2"
+              height="550px"
+              width="900px"
+            />
+            <h4 class="card-title">produit</h4>
+            <p class="card-text">
+              Vous trouvez tous les produit de haut qualite
+            </p>
+            <span
+              class="badge text-bg-warning m-4"
+              routerLinkActive="actif"
+              routerLink="/listproduit"
+            >
+              Voir Plus
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="padding: 40px">
+    <div class="row" style="margin-bottom: 3px">
+      <div class="gdiv">
+        <div class="col-sm-4">
+          <div class="card box image" style="width: 18rem">
+            <img
+              style="width: 280px; height: 300px"
+              src="assets/livraison.png"
+              class="card-img-top p-2"
+              height="250px"
+              width="900px"
+            />
+            <h4 class="card-title">Livraison</h4>
+            <p class="card-text">
+              Vous trouvez votre commande dans quelques minutes
+            </p>
+            <span class="badge text-bg-warning m-4"> Voir Plus </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="padding: 40px">
+    <div class="row" style="margin-bottom: 3px">
+      <div class="gdiv">
+        <div class="col-sm-4">
+          <div class="card box image" style="width: 18rem">
+            <img
+              style="width: 280px; height: 300px"
+              src="assets/promo.png"
+              class="card-img-top p-2"
+              height="250px"
+              width="900px"
+            />
+            <h4 class="card-title">promotion</h4>
+            <p class="card-text">Des promotions ibattable qui vous attends</p>
+            <span
+              class="badge text-bg-warning m-4"
+              routerLinkActive="actif"
+              routerLink="/promotion"
+            >
+              Voir Plus
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="x">
+  <div style="text-align: center; padding: 1em 0">
+    <h2>
+      <a
+        style="text-decoration: none"
+        href="https://www.zeitverschiebung.net/fr/country/tn"
+        ><span style="color: rgb(173, 24, 24)">Heure actuelle</span
+        ><br />Tunisie</a
+      >
+    </h2>
+    <iframe
+      src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=fr&size=large&timezone=Africa%2FTunis"
+      width="100%"
+      height="140"
+      frameborder="0"
+      seamless
+    ></iframe>
+  </div>
+</div>
+<br /><br />

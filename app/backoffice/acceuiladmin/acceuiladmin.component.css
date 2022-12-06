@@ -1,0 +1,14 @@
+.header_acceuil {
+  height: 750px;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../../../assets/bg_admin3.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
+img {
+  height: 100px;
+}

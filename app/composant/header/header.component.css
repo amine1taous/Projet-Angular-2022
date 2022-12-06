@@ -1,0 +1,93 @@
+.entete {
+  height: 50px;
+  max-width: 1500px;
+  background-color: rgb(32, 32, 32);
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+.entete_gauche {
+  height: 50px;
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.entete_gauche i {
+  margin-top: 15px;
+}
+.entete_gauche span {
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.entete_droit {
+  height: 50px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  float: right;
+}
+.entete_droit i {
+  margin-top: 15px;
+  padding-right: 15px;
+}
+.entete_droit span {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.entete_2 {
+  height: 70px;
+  width: 1300px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+img {
+  height: 70px;
+}
+.entete_2 ul {
+  margin-top: 20px;
+  list-style-type: none;
+}
+ul li {
+  display: inline;
+  padding: 30px;
+}
+a:hover {
+  cursor: pointer;
+}
+.entete_2_gauche {
+  padding-top: 30px;
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.entete_3 {
+  margin-left: 200px;
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.actif {
+  color: yellow;
+  font-weight: bold;
+}
+.actif-favoris {
+  color: black;
+  background-color: white;
+  border: 0px;
+}
+.actif-panier {
+  color: black;
+  background-color: white;
+  border: 0px;
+}
+.active_btn {
+  color: black;
+  background-color: white;
+  border: none;
+}

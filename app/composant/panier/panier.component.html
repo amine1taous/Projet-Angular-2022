@@ -1,0 +1,78 @@
+<ng-container>
+  <div class="container">
+    <div class="card-table">
+      <div class="cart-product">
+        <table class="table table-responsive">
+          <thead>
+            <tr>
+              <th>id</th>
+              <th>Libelle</th>
+              <th>image du produit</th>
+              <th>prix</th>
+              <th>Quantity</th>
+            </tr>
+          </thead>
+          <tbody *ngIf="produits.length != 0">
+            <tr *ngFor="let prod of produits; let i = index">
+              <td>{{ i + 1 }}</td>
+              <td>{{ prod.libelle }}</td>
+              <!-- id -->
+              <td>
+                <img style="width: 120px" src="{{ prod.image }}" alt="" />
+                <!-- image -->
+              </td>
+              <td style="width: 25%">{{ prod.prix }}</td>
+              <!-- libelle -->
+              <th style="width: 12%">
+                <div class="row no-gutters">
+                  <div class="col">
+                    <button class="btn btn-primary btn-sm">
+                      <i class="fa fa-plus" (click)="plus()"></i>
+                    </button>
+                  </div>
+
+                  <div class="col ml-4 mr-2">{{ number }}</div>
+
+                  <div class="col">
+                    <button class="btn btn-primary btn-sm">
+                      <i class="fa fa-minus" (click)="moins()"></i>
+                    </button>
+                  </div>
+
+                  <div class="col-8"></div>
+                </div>
+              </th>
+              <!-- prix -->
+
+              <td>
+                <button (click)="removeItem(prod)" class="btn btn-danger">
+                  <i class="fas fa-trash-alt"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4"></td>
+              <td>
+                <button (click)="emptycart()" class="btn btn-danger">
+                  Empty Cart
+                </button>
+              </td>
+              <td>
+                <button routerLink="/listproduit" class="btn btn-primary">
+                  Shop More
+                </button>
+              </td>
+              <td><button class="btn btn-success">Checkout</button></td>
+              <td>
+                <strong
+                  >Grand Total :
+                  {{ grandTotal | prix | number : ".3" }}dt</strong
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</ng-container>

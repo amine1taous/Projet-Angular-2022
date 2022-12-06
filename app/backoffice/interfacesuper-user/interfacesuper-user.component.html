@@ -1,0 +1,92 @@
+<div>
+  <a
+    href="#popup"
+    class="btn btn-success"
+    style="width: 80%; margin-left: 140px; margin-top: 15px"
+  >
+    Ajouter produit
+  </a>
+</div>
+<div id="popup" class="overplay">
+  <div class="popup">
+    <h3>Ajouter un produit</h3>
+    <a href="#" class="cross">&times;</a>
+    <!--  -->
+    <form [formGroup]="produitForm" (ngSubmit)="ajouter()">
+      <label> Donnez le nom du produit</label>
+      <input class="form-control" type="text" formControlName="libelle" />
+      <br />
+      <label> Donnez l'image du produit</label>
+      <input class="form-control" type="text" formControlName="image" />
+      <br />
+      <label> Donnez le prix du prix</label>
+      <input class="form-control" type="number" formControlName="prix" />
+      <br />
+      <label> Donnez la disponibilité du produit</label>
+      <input class="form-control" type="text" formControlName="disponibilite" />
+      <br />
+      <label> Donnez la categorie du produit</label>
+      <input class="form-control" type="text" formControlName="categorie" />
+      <br />
+      <label> Donnez la quantité</label>
+      <input class="form-control" type="text" formControlName="quantite" />
+      <br />
+      <label> promotion ou non </label>
+      <input class="form-control" type="text" formControlName="promotion" />
+      <br />
+
+      <button class="btn btn-success">Ajouter Produit</button>
+    </form>
+  </div>
+</div>
+
+<div class="popup">
+  <h3>modifier mroduit</h3>
+  <!--  -->
+  <form [formGroup]="produitForm">
+    <label> Donnez le nom du produit</label>
+    <input class="form-control" type="text" formControlName="libelle" />
+    <br />
+    <label> donner la disponibilite</label>
+    <input class="form-control" type="text" formControlName="disponibilite" />
+    <label> Donnez la categorie du produit</label>
+    <input class="form-control" type="text" formControlName="categorie" />
+    <br />
+    <label> donner la quantite du produit</label>
+    <input class="form-control" type="number" formControlName="quantite" />
+    <br />
+    <button class="btn btn-outline-warning">Modifer</button>
+  </form>
+</div>
+
+<div>
+  <ul class="container">
+    <li *ngFor="let pro of pr" class="container p-5 my-5 bg-light text-dark">
+      <div style="display: flex; justify-content: space-around">
+        <span><img [src]="pro.image" /></span>
+        <span style="padding-top: 30px">
+          <span>
+            <span> <strong>libelle :</strong>{{ pro.libelle }} </span>
+            <span>
+              <strong>disponibilité :</strong>{{ pro.disponibilite }}
+            </span>
+          </span>
+          <span>
+            <span> <strong>categorie :</strong>{{ pro.categorie }} </span>
+            <span> <strong>quantite :</strong>{{ pro.quantite }} </span>
+          </span>
+        </span>
+        <span style="padding-top: 5px">
+          <!-- <button class="btn btn-outline-warning" (click)="onmodif(pro)">
+            Modifer
+          </button> -->
+          <a class="btn btn-success" (click)="modifier(produit)"> modifieer </a>
+          <button class="btn btn-outline-danger" (click)="supprimer(pro)">
+            supprimer
+          </button>
+        </span>
+      </div>
+    </li>
+  </ul>
+</div>
+{{ pr | json }}
